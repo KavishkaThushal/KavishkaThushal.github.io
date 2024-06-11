@@ -1,0 +1,201 @@
+.skill-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 3rem auto;
+    height: 100%;
+    gap: 1rem;
+
+    .sub-title{
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin:2rem 0 0 0 
+        
+        
+    }
+    
+    .text-container{
+        text-align: center;
+
+        h1{
+            font-size: 50px;
+        }
+    }
+
+    .skills{
+        display: grid;
+       grid-template-columns: 1fr 1fr;
+       align-items: center;
+       gap: 2rem;
+       padding: 2rem;
+       
+       
+
+         .skill{
+            display: flex;
+            flex-direction: column;
+           font-size: .8rem;
+           align-items: start;
+
+            .skill-bar{
+                width: 100%;
+                height: 10px;
+                background-color: #f0f0f0;
+                border-radius: 10px;
+                position: relative;
+                margin-top: .7rem;
+
+                .skill-progress{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    background: rgb(191,189,217);
+                    background: linear-gradient(90deg, rgba(191,189,217,1) 0%, rgba(102,51,153,1) 0%, rgba(179,0,255,1) 74%);
+                    border-radius: 10px;
+                    
+                }
+
+
+            }
+         }
+    }
+
+    .professional-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-top: 2rem;
+
+        .professional{
+            display: flex;
+            flex-direction: column;
+            gap: .7rem;
+            align-items: center;
+            position: relative;
+            
+
+            .outer-border{
+               
+                width: 160px;
+                height: 160px;
+                border-radius: 50%;
+                box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),-6px -6px 10px -1px rgba(255,255,255,0.2);
+                padding: 20px;
+
+               .inner-border{
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),inset -4px -4px 6px -1px rgba(255,255,255,0.3),-0.5px -0.5px 0px rgba(255,255,255,.5),0.5px 0.5px 0px rgba(0,0,0,0.15),0px 12px 10px -10px rgba(0,0,0,0.05);
+               } 
+            }
+
+            svg{
+                position: absolute;
+                top: 0;
+                left: 0;
+                
+
+               
+
+            }
+
+           
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .skill-wrapper{
+        .text-container{
+            h1{
+                font-size: 30px;
+            
+            }
+        }
+        .sub-title{
+            font-size: 1.2rem;
+        }
+        .skills{
+            
+           grid-template-columns: 1fr 
+           
+           
+    }
+    }
+    .pro{
+        display: none;
+    }
+  .professional-container{
+    
+
+    .professional{
+        display: none;
+        .outer-border{
+               
+            display: none;
+      
+             .inner-border{
+              display: none;
+              
+             } 
+          }
+          svg{
+              display: none;
+          }
+          p{
+            display: none;
+          }
+         
+    }
+  }
+    
+}
+@media screen and (max-width: 768px) {
+    .skill-wrapper{
+        .text-container{
+            h1{
+                font-size: 30px;
+            
+            }
+        }
+        .sub-title{
+            font-size: 1.2rem;
+        }
+        .skills{
+            
+           grid-template-columns: 1fr 
+           
+           
+    }
+    }
+    .pro{
+        display: none;
+    }
+  .professional-container{
+    
+
+    .professional{
+        display: none;
+        .outer-border{
+               
+            display: none;
+      
+             .inner-border{
+              display: none;
+              
+             } 
+          }
+          svg{
+              display: none;
+          }
+          p{
+            display: none;
+          }
+         
+    }
+  }
+    
+}
